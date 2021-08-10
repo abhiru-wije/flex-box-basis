@@ -34,3 +34,31 @@
 .container-2 .box {
   flex-basis: 25%;
 }
+
+.flexbox-container {
+  display: flex;
+}
+.flexbox-item {
+  background-color: salmon;
+  width: 15%;
+  border: 3px solid seagreen;
+  color: #ccc;
+  font-size: 2em;
+  padding: 20px;
+  margin: 10px;
+}
+.item-1 {
+  min-height: 50px;
+  flex-grow: 1;
+  align-self: center;
+  /* flex: 5 5 34%  this contain 1- flex grow, shrink, basis */
+}
+.item-2 {
+  min-height: 100px;
+  align-self: flex-end;
+  /* align-self: center; item comes to center */
+}
+.item-3 {
+  min-height: 150px;
+  align-self: flex-start;
+}
